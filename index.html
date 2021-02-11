@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Portfólio | Eduardo de Araújo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #181A1B;
+            color: #FFF;
+        }
+
+        #my-name {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        a {
+            color: #FFF;
+        }
+
+        .biography-paragraph {
+            color: #52b788;
+            text-decoration: underline;
+        }
+
+        #my-skills {
+            line-height: 2em;
+        }
+
+        .my-skills-strong {
+            font-size: 1.2em;
+
+        }
+
+        .my-skills-week {
+            font-size: 1.1em;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Eduardo de Araújo Gomes Filho</h1>
+    <h1 id="my-name">Eduardo de Araújo Gomes Filho</h1>
     <img src="./eduardo-araujo.jpeg" alt="Foto do Eduardo de Araújo">
     <hr>
-    <h3>Navegação</h3>
+    <h3>Navegue pelo meu Portfólio</h3>
     <ol>
         <li>
-            <a href="#quem-sou-eu">Quem sou Eu</a>
+            <a href="#who-am-i">Quem sou Eu</a>
         </li>
         <li>
-            <a href="#minhas-habilidades">Minhas Habilidades</a>
+            <a href="#my-skills">Minhas Habilidades</a>
         </li>
         <li>
             <a href="#blog">Blog</a>
@@ -22,21 +62,30 @@
     </ol>
     <hr>
     <h3>Biografia</h3>
-    <p id="quem-sou-eu"><em>Sou formado em Engenharia Civil e sou estudante de desenvovilmento web na Trybe.</em>
-        <br> Sou <strong>apaixonado por tecnologia</strong> e gosto sempre de novos desafios.
-        <br> Sou <strong>Brasileiro</strong> e moro no <strong>Rio de Janeiro</strong>, na cidade de São Gonçalo.
+    <p id="who-am-i">Sou <strong
+            class="biography-paragraph">Brasileiro</strong>, nasci e cresci em
+        <strong class="biography-paragraph"> Pernambuco/Recife</strong>.
+        atualmente eu moro no <strong class="biography-paragraph">Rio de
+            Janeiro</strong>,
+        na cidade de São Gonçalo.<br><br>
+        <em>Sou formado em Engenharia Civil e sou estudante de desenvovilmento
+            web na <strong class="biography-paragraph">Trybe</strong></em>.
+        <br><br> Sou <strong class="biography-paragraph">apaixonado por
+            tecnologia</strong> e gosto sempre de novos desafios.
     </p>
     <hr>
     <h3>Habilidades</h3>
-    <ul id="minhas-habilidades">
-        <li><strong>HTML</strong></li>
-        <li><strong>CSS</strong></li>
-        <li><strong>Javascript</strong></li>
-        <li>Java</li>
-        <li>Git</li>
+    <ul id="my-skills">
+        <li class="my-skills-strong"><strong>HTML</strong></li>
+        <li class="my-skills-strong"><strong>CSS</strong></li>
+        <li class="my-skills-strong"><strong>Javascript</strong></li>
+        <li class="my-skills-week">Java</li>
+        <li class="my-skills-week">Git</li>
     </ul>
     <hr>
     <h3>Blog Trybe</h3>
-    <a id="blog" href="https://blog.betrybe.com/" target="_blank">Blog da Trybe</a>
+    <a id="blog" href="https://blog.betrybe.com/" target="_blank">Blog da
+        Trybe</a>
 </body>
+
 </html>
