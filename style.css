@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #181A1B;
+    color: #FFF;
+}
+
+#my-name {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    color: #FFF;
+}
+
+.biography-paragraph {
+    color: #52b788;
+    text-decoration: underline;
+}
+
+#my-skills {
+    line-height: 2em;
+}
+
+.my-skills-strong {
+    font-size: 1.2em;
+
+}
+
+.my-skills-week {
+    font-size: 1.1em;
+}
