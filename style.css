@@ -7,13 +7,12 @@ body {
     margin: 0;
 }
 #navbar ol{
-    display: flex;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
     list-style: none;
     background-color: #236B52;
     margin: 0;
+    text-align-last: justify;
+    box-sizing: border-box;
 }
 
 #navbar li {
@@ -21,14 +20,49 @@ body {
     font-size: 30px;
 }
 
+
 #navbar a {
     text-decoration: none;
 }
 
+#main {
+    height: 95vh;
+    margin-top: 200px   
+
+}
+#main::after {
+    content: "";
+    border: solid #008000;
+    border-width: 0 15px 15px 0;
+    display: inline-block;    
+    padding: 30px; 
+    transform: rotate(45deg);
+    margin: 150px 900px 0px;
+    animation: animate 2s infinite;   
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+#my-name, #who-i-am {
+    display: inline-block;
+}
 #main #my-name{
     text-align: center;    
     width: 100%;
 }
+
 
 #my-name {
     font-family: 'Roboto Condensed', sans-serif;
