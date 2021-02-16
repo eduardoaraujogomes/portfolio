@@ -1,0 +1,113 @@
+body {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #181A1B;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+#navbar ol{
+    width: 100%;
+    list-style: none;
+    background-color: #236B52;
+    margin: 0;
+    text-align-last: justify;
+    box-sizing: border-box;
+}
+
+#navbar li {
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+#navbar a {
+    text-decoration: none;
+}
+
+#main {
+    height: 95vh;
+    margin-top: 200px   
+
+}
+#main::after {
+    content: "";
+    border: solid #008000;
+    border-width: 0 15px 15px 0;
+    display: inline-block;    
+    padding: 30px; 
+    transform: rotate(45deg);
+    margin: 150px 900px 0px;
+    animation: animate 2s infinite;   
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+#my-name, #who-i-am {
+    display: inline-block;
+}
+#main #my-name{
+    text-align: center;    
+    width: 100%;
+}
+
+
+#my-name {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+}
+.main-about-me{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-about-me img {
+    display: inline-block;
+    width: 200px;
+    margin: 30px;
+    background-color: #236B52;
+    padding: 50px;
+}
+
+.main-about-me #who-am-i {
+    display: inline-block;
+    text-align: left;
+    padding: 50px;
+}
+
+a {
+    color: #FFF;
+}
+
+.biography-paragraph {
+    color: #52b788;
+    text-decoration: underline;
+}
+
+#my-skills {
+    line-height: 2em;
+}
+
+.my-skills-strong {
+    font-size: 1.2em;
+
+}
+
+.my-skills-week {
+    font-size: 1.1em;
+}
