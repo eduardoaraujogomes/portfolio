@@ -1,125 +1,165 @@
 body {
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #181A1B;
-    color: #FFF;
-    padding: 0;
-    margin: 0;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #181a1b;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
-#navbar ol{
-    width: 100%;
-    list-style: none;
-    background-color: #236B52;
-    margin: 0;
-    text-align-last: justify;
-    box-sizing: border-box;
+#navbar ol {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #236b52;
+  margin: 0;
+  text-align-last: justify;
+  box-sizing: border-box;
 }
 
 #navbar li {
-    display: inline-block;
-    font-size: 30px;
+  display: inline-block;
+  font-size: 30px;
 }
 
-
 #navbar a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  font-size: 40px;
+  transition: 0.7s all ease;
 }
 
 #main {
-    height: 95vh;
-    margin-top: 200px   
-
+  height: 95vh;
+  margin-top: 200px;
 }
 #main::after {
-    content: "";
-    border: solid #008000;
-    border-width: 0 15px 15px 0;
-    display: inline-block;    
-    padding: 30px; 
-    transform: rotate(45deg);
-    margin: 150px 900px 0px;
-    animation: animate 2s infinite;   
-
+  content: "";
+  border: solid #008000;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 30px;
+  transform: rotate(45deg);
+  margin: 150px 900px 0px;
+  animation: animate 2s infinite;
 }
 
 @keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
-#my-name, #who-i-am {
-    display: inline-block;
+#my-name,
+#who-i-am {
+  display: inline-block;
 }
-#main #my-name{
-    text-align: center;    
-    width: 100%;
+#main #my-name {
+  text-align: center;
+  width: 100%;
 }
-
 
 #my-name {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 50px;
 }
-.main-about-me{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
+.main-about-me {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-about-me img {
-    display: inline-block;
-    width: 200px;
-    margin: 30px;
-    background-color: #236B52;
-    padding: 50px;
+  display: inline-block;
+  width: 200px;
+  margin: 30px;
+  border-radius: 50%;
 }
 
 .main-about-me #who-am-i {
-    display: inline-block;
-    text-align: left;
-    padding: 50px;
+  display: inline-block;
+  text-align: left;
+  padding: 50px;
 }
 
 a {
-    color: #FFF;
+  color: #fff;
 }
 
 .biography-paragraph {
-    color: #52b788;
-    text-decoration: underline;
+  color: #52b788;
+  text-decoration: underline;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem;
+  align-items: center;
+  padding: 4.375rem;
 }
 
 .card {
-    width: 600px;
-    height: 400px;
-    margin: auto;
+  width: 600px;
+  height: 400px;
+  margin: auto;
 
-    background-color: rgba(0, 0, 0, .3);
-    border: 2px solid rgba(82, 183, 136, .1);
-    border-bottom-right-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(82, 183, 136, 0.1);
+  border-bottom-right-radius: 25%;
+  border-top-left-radius: 25%;
+}
+
+.card h3 {
+  text-align: center;
 }
 
 #my-skills {
-    line-height: 2rem;
-    ha
+  line-height: 2rem;
+  list-style-type: none;
+}
 
+#my-skills li {
+  border-left: 5px solid #52b788;
+  margin-top: 20px;
+}
+.effect:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(82, 183, 136, 1) 0%,
+    rgba(147, 218, 185, 1) 100%
+  );
+  transition: 0.3s all ease;
 }
 
 .my-skills-strong {
-    font-size: 1.2rem;
-
+  font-size: 1.2rem;
 }
 
 .my-skills-week {
+  font-size: 1.1rem;
+}
+
+.container a {
     font-size: 1.1rem;
+    line-height: 2rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-left: 5px solid #52b788;
 }
